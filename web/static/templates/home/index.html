@@ -4,10 +4,46 @@
     {% load static %}
     <meta charset="UTF-8">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="{% static 'web/css/estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/estilo-home.css' %}">
 </head>
-<body>
-    <h1>Bem-vindo ao Meu Projeto!</h1>
-    <p>Esta é a página inicial.</p>
-</body>
+<div class="background"></div>
+
+    <!-- Botões principais -->
+    <div class="button-container">
+        <div class="button incluir">Incluir</div>
+        <div class="button editar">Editar</div>
+        <div class="button excluir">Excluir</div>
+    </div>
+
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="button produto">Produto</div>
+        <div class="button insumo">Insumo</div>
+        <div class="button estoque">Estoque</div>
+        <div class="button movimentos">Movimentos</div>
+        <div class="button financeiro">Financeiro</div>
+    </div>
+
+    <!-- Logo -->
+    <img class="logo" src="{% static 'web/img/logo.png' %}" alt="Logo">
+
+    <!-- Campo de lista -->
+    <div id="campo-lista"></div>
+    <div class="consulta-container">
+        <div id="nome" class="consulta-bloco">
+            <label for="nome-input">Nome:</label>
+            <input type="text" id="nome-input" class="input-text">
+        </div>
+
+        <div id="peso" class="consulta-bloco">
+            <label for="peso-input">Peso:</label>
+            <input type="text" id="peso-input" class="input-text">
+        </div>
+
+        <div id="custo" class="consulta-bloco">
+            <label for="custo-input">Custo:</label>
+            <input type="text" id="custo-input" class="input-text">
+        </div>
+    </div>
+  </div>
 </html>
